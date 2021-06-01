@@ -1,0 +1,23 @@
+@echo off
+chcp 65001 >nul
+:login
+cls
+color 2
+title *video tutorial*
+echo 
+echo ██╗      ██████╗  ██████╗ ██╗███╗   ██╗
+echo ██║     ██╔═══██╗██╔════╝ ██║████╗  ██║
+echo ██║     ██║   ██║██║  ███╗██║██╔██╗ ██║
+echo ██║     ██║   ██║██║   ██║██║██║╚██╗██║
+echo ███████╗╚██████╔╝╚██████╔╝██║██║ ╚████║
+echo ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝╚═╝  ╚═══╝
+echo                                        
+echo 
+set /p user=Username:
+echo.
+set /p pass=Password:
+if %user% == 123 if %pass% == 321 goto main
+echo try again *Wait 5 Senconds*
+timeout 5 >nul
+goto login
+:main
